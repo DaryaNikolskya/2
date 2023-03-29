@@ -1,0 +1,22 @@
+<html>
+ <head> <meta charset="utf-8">
+ <title>Переворот числа</title>
+
+ <script>
+ function newCh(n){
+ var n = prompt ('Введите число', '')
+ let a = String(n)
+ let result = '';
+ for(let i = a.length-1; i > -1; i--) {
+ result += a[i];
+ }
+ alert ('Число наоборот ' + result);
+ return result
+ }
+ </script>
+</head>
+<body>
+<input type="button" value="Напишите число" onClick="newCh()">
+<div id="res"></div>
+</body>
+</html>
